@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Web Design with Internal CSS</title>
+    <style>
+
+        body {
+            font-family: 'Times New Roman', Times, serif;
+        
+           
+            background-position:100%;
+            margin: 0;
+            padding: 0;
+        }
+
+  .video-background {
+  position: fixed;
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+}
+
+#background-video {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  transform: translate(-50%, -50%);
+}
+       
+        header {
+            
+            color: rgb(135, 157, 101);
+            padding: 10px 0;
+            text-align: center;
+        }
+
+
+        nav {
+            background-color: #f7b898;
+            text-align: center;
+            padding: 30px 0;
+            border-radius: 10;
+            border-style: initial;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+        }
+
+        nav a:hover {
+            background-color: #79e02f;
+            padding: 5px;
+        }
+
+ 
+        main {
+            padding: 20px;
+            background-color: rgba(240, 248, 255, 0.543);
+          
+            margin: 20px auto;
+            width: 80%;
+            box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+          
+        }
+        p {  color: #b8d612;
+
+
+        }
+
+
+        section {
+            margin-bottom: 20px;  
+        }
+
+        .about-section {
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        h1, h2 {
+            color: #3ef970;
+            
+        }
+   
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1><u>Collage Event 2025</u></h1>
+    </header>
+
+
+    <nav>
+        <a href="home.html" target="_blank">Home</a>
+        <a href="register.html" target="_blank">Register</a>
+        <a href="date&time.html" target="_blank">Date & Time</a>
+        <a href="about event.html" target="_blank">About Events</a>
+        <a href="help center.html" target="_blank">Help Center</a>
+    </nav>
+
+
+    <main>
+        <section>
+            <div class="video-background">
+                <video autoplay muted loop id="background-video">
+                  <source src="clouds.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+           
+        </section>
+
+        <section id="about-section">
+
+            <h1><u>About US:</u></h1>
+            <h3>This project is a simple yet creative webpage designed to demonstrate the use of internal CSS. It features five different web pages linked and integrated into one main page. Developed using CSS, JavaScript, and jQuery, it includes several attractive animations that enhance the user experience and showcase the visual potential of front-end web development.</h3>
+            <h1><u>This is our main webpage</u></h1>
+          
+
+            
+    </section>
+    </main>
+
+    
+</body>
+</html>
